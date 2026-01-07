@@ -92,7 +92,7 @@ export default function QuizForm() {
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data?.error ?? "Error guardando la respuesta.");
 
-      setOkMsg("Listo. Estás dentro como Founder. Te contactaremos para el acceso.");
+      setOkMsg( "¡Listo! Ya formas parte de los Founders. Entra al Discord para votar decisiones y recibir acceso prioritario.");
       setForm({
         nickname: "",
         contact: "",
@@ -297,4 +297,5 @@ export default function QuizForm() {
     </form>
   );
 }
+
 
